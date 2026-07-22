@@ -1,0 +1,24 @@
+# devkitPro / libnx Build Outputs
+*.elf
+*.nacp
+*.nro
+build/
+
+# Executables & Temporary Test Scripts
+*.exe
+*.py
+*.pyc
+__pycache__/
+compare_zcci.cpp
+
+# Sample ROMs and Output Archives
+*.3ds
+*.cci
+*.cxi
+*.zcci
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
