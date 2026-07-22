@@ -22,3 +22,6 @@ compare_zcci.cpp
 Thumbs.db
 .vscode/
 .idea/
+icon.png
+CMakeLists.txt
+
