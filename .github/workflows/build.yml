@@ -16,13 +16,20 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup devkitPro A64
-        uses: devkitpro/action-devkitpro@v1
-        with:
-          toolchains: devkA64 libnx
+      - name: Install devkitPro Switch Toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg
+          sudo wget https://apt.devkitpro.org/devkitpro-keyring.gpg -O /usr/share/keyrings/devkitpro-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/devkitpro-keyring.gpg] https://apt.devkitpro.org stable main" | sudo tee /etc/apt/sources.list.d/devkitpro.list
+          sudo apt-get update
+          sudo apt-get install -y switch-dev switch-sdl2 switch-tools
 
       - name: Build NRO Binary
         run: |
+          export DEVKITPRO=/opt/devkitpro
+          export DEVKITA64=/opt/devkitpro/devkitA64
+          export PATH=$DEVKITPRO/tools/bin:$DEVKITA64/bin:$PATH
           make clean
           make
 
