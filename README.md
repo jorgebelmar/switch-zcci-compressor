@@ -83,6 +83,6 @@ make
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 - **Developer / Desarrollado por**: [elcoke.cl](https://elcoke.cl)
-- Special thanks to the Nintendo Switch homebrew community, Azahar & Citra Project creators, devkitPro / libnx team, and Borealis framework developers.
+- Special thanks to the Switch homebrew community, Azahar & Citra Project creators, devkitPro / libnx team, and Borealis framework developers.
 
 > *"Desde CholChol - Chile 🇨🇱 con amor para los amantes de la magia 🪄"*
