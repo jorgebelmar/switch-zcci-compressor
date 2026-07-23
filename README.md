@@ -10,9 +10,9 @@
 
 ## 🇪🇸 Español
 
-Aplicación Homebrew nativa para Nintendo Switch que permite comprimir ROMs de Nintendo 3DS (`.3ds` / `.cci`) al formato optimizado **`.zcci` (ZSTD Seekable Format)** directamente en la tarjeta SD de la consola. 
+Aplicación Homebrew nativa para Switch que permite comprimir ROMs de 3DS Desencriptadas (`.3ds` / `.cci`) al formato optimizado **`.zcci` (ZSTD Seekable Format)** directamente en la tarjeta SD de la consola. 
 
-Los archivos `.zcci` generados son **100% compatibles bit a bit con la especificación oficial de Azahar / Citra**, permitiendo reducir el tamaño de las ROMs de 1 GB a ~300 MB para su emulación directa en el núcleo **Azahar (Tico)** sin descompresión previa ni retardos.
+Los archivos `.zcci` generados son **100% compatibles bit a bit con la especificación oficial de Azahar / Citra**, permitiendo reducir el tamaño de las ROMs hasta en un 50% para su emulación directa en el núcleo **Azahar (Tico)** sin descompresión previa ni retardos.
 
 ### 🌟 Características Principales
 
@@ -22,7 +22,7 @@ Los archivos `.zcci` generados son **100% compatibles bit a bit con la especific
 - **🛡️ Ventana de Protección contra Sobrescritura**: Advertencia de seguridad antes de sobrescribir archivos `.zcci` existentes.
 - **✨ Diseño Horizon Dark Glass**: Interfaz estilo *glassmorphism* emergente con barra de estado y créditos permanentes.
 
-### 📂 Instalación en Nintendo Switch
+### 📂 Instalación en la Switch
 
 1. Descarga **`3ds_to_zcci_compressor.nro`** desde la sección [Releases](../../releases).
 2. Copia el archivo `.nro` en la carpeta `switch/` de tu tarjeta SD:
@@ -39,7 +39,7 @@ Los archivos `.zcci` generados son **100% compatibles bit a bit con la especific
 
 ## 🇬🇧 English
 
-Native Homebrew application for Nintendo Switch that compresses Nintendo 3DS ROMs (`.3ds` / `.cci`) into the optimized **`.zcci` (ZSTD Seekable Format)** directly on the console's SD card.
+Native Homebrew application for Switch that compresses decrypted 3DS ROMs (`.3ds` / `.cci`) into the optimized **`.zcci` (ZSTD Seekable Format)** directly on the console's SD card.
 
 The generated `.zcci` files are **100% bit-exact compatible with the official Azahar / Citra specification**, reducing ROM sizes from 1 GB down to ~300 MB for instant, direct emulation in the **Azahar (Tico)** core without prior extraction or lag.
 
@@ -51,7 +51,7 @@ The generated `.zcci` files are **100% bit-exact compatible with the official Az
 - **🛡️ Overwrite Protection Modal**: Safety warning prompt before overwriting existing `.zcci` files.
 - **✨ Horizon Dark Glass Design**: Pop-up *glassmorphism* interface with persistent top status bar and footer credits.
 
-### 📂 Installation on Nintendo Switch
+### 📂 Installation on Switch
 
 1. Download **`3ds_to_zcci_compressor.nro`** from the [Releases](../../releases) tab.
 2. Copy the `.nro` file to the `switch/` directory on your SD card:
