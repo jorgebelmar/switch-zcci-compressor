@@ -11,17 +11,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: ghcr.io/devkitpro/devkitpro:latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Setup devkitPro A64
+        uses: devkitpro/action-devkitpro@v1
+        with:
+          toolchains: devkA64 libnx
+
       - name: Build NRO Binary
         run: |
-          export PATH=/opt/devkitpro/tools/bin:/opt/devkitpro/devkitA64/bin:$PATH
-          export DEVKITPRO=/opt/devkitpro
-          export DEVKITA64=/opt/devkitpro/devkitA64
           make clean
           make
 
